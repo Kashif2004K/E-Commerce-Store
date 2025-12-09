@@ -1,15 +1,13 @@
-// 1. Product Data Array
 const products = [
-    { id: 1, name: "Premium T-Shirt", price: 25.00, image: "assets/product6.jpg" },
-    { id: 2, name: "Stylish Hat", price: 18.50, image: "assets/product6.jpg" },
-    { id: 3, name: "Travel Mug", price: 15.00, image: "assets/product5.jpg" },
-    { id: 4, name: "Classic Hoodie", price: 45.00, image: "assets/product4.jpg" }
+    { id: 1, name: "T-Shirt", price: 25.00, image: "assets/shirt.jpg" },
+    { id: 2, name: "Hat", price: 18.50, image: "assets/hat.jpg" },
+    { id: 3, name: "Mug", price: 15.00, image: "assets/mug.jpg" },
+    { id: 4, name: "Hoodie", price: 45.00, image: "assets/hoodie.jpg" }
 ];
 
-// 2. Function to Render Products
 function renderProducts() {
     const productGrid = document.getElementById('product-grid');
-    productGrid.innerHTML = ''; // Clear the "Loading products..." text
+    productGrid.innerHTML = ''; 
 
     products.forEach(product => {
         // Create the HTML structure for a single product card
