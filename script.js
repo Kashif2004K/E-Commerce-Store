@@ -15,9 +15,13 @@ function renderProducts() {
         card.className = 'product-card';
         card.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>$${product.price.toFixed(2)}</p>
-            <button onclick="addToCart(${product.id}, '${product.name}')">Add to Cart</button>
+            <div class="product-info">
+                <h3>${product.name}</h3>
+                <p>$${product.price.toFixed(2)}</p>
+            </div>
+            <button onclick="addToCart(${product.id}, '${product.name}')">
+                <i class="fas fa-cart-plus"></i>Add to Cart
+            </button>
         `;
         productGrid.appendChild(card);
     });
