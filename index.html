@@ -29,9 +29,33 @@
     </section>
 
     <section id="products" class="products-section">
-        <h2>Our Featured Products</h2>
-        <div id="product-grid" class="product-grid">
-            <p>Loading products...</p>
+        <div class="products-layout-container">
+            
+            <aside id="categories-sidebar" class="sidebar">
+                <h3>Product Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#" class="active">All Products</a></li>
+                    <li><a href="#">Apparel (4)</a></li>
+                    <li><a href="#">Accessories (2)</a></li>
+                    <li><a href="#">Drinkware (1)</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+
+                <h3>Filter</h3>
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <input type="range" min="0" max="100" value="70">
+                    <p>$0 - $100</p>
+                </div>
+            </aside>
+
+            <div class="products-main-content">
+                <h2>Our Featured Products</h2>
+                <div id="product-grid" class="product-grid">
+                    <p>Loading products...</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
