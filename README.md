@@ -18,24 +18,6 @@ K.EStore is a simple, modern, and stylized front-end e-commerce template built u
 * **Vanilla JavaScript:** Simple `renderProducts()` function for dynamic content loading and basic form validation.
 * **Professional Footer:** Contains navigation links, social media icons, and copyright information.
 
-## 🛠️ Installation and Setup
-
-Since this is a front-end-only project, installation is simple.
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YourUsername/kestore.git](https://github.com/YourUsername/kestore.git)
-    cd kestore
-    ```
-2.  **Open in Browser:**
-    You can simply open the `index.html` file directly in your web browser (e.g., `file:///path/to/kestore/index.html`).
-3.  **Use a Local Server (Recommended):**
-    For the best experience, especially if you plan to fetch data or ensure correct paths, use a simple local server like **Live Server** extension in VS Code, or Python's built-in server:
-    ```bash
-    # Python 3
-    python -m http.server 5000
-    ```
-    Then, navigate to `http://localhost:5000/index.html`.
 
 ## ⚙️ Customization
 
@@ -53,4 +35,4 @@ You can easily change the main colors by modifying the CSS variables at the top 
 ```
 
 ## Live Demo
-https://your-username.github.io/kestore/
+https://kashif2004k.github.io/E-Commerce-Store/
