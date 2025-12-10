@@ -10,7 +10,6 @@ function renderProducts() {
     productGrid.innerHTML = ''; 
 
     products.forEach(product => {
-        // Create the HTML structure for a single product card
         const card = document.createElement('div');
         card.className = 'product-card';
         card.innerHTML = `
@@ -27,29 +26,20 @@ function renderProducts() {
     });
 }
 
-// 3. Simple Add to Cart Logic
 function addToCart(id, name) {
-    // In a real e-commerce site, this would update a cart count or use Local Storage.
-    // For this simple example, we'll just show an alert.
     alert(`Added "${name}" (ID: ${id}) to the cart!`);
 }
-
-// 4. Contact Form Submission Handling
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Stop the form from actually submitting (reloading the page)
-    
-    // Simple validation check (since the HTML has 'required')
+    event.preventDefault(); 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
     if (name && email) {
         alert(`Thank you, ${name}! Your message has been received.`);
-        this.reset(); // Clear the form fields
+        this.reset(); 
     } else {
         alert('Please fill out all required fields.');
     }
 });
 
-
-// 5. Initial Call: Load the products when the page loads
 renderProducts();
